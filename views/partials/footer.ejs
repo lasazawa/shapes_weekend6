@@ -1,0 +1,23 @@
+  <script href="/scripts/scripts.js"></script>
+  <script>
+  $(function() {
+    $( ".drag" ).draggable();
+  });
+
+  $("#square").rotate({
+    angle:0,
+        bind: {
+            click : function(){
+                var curAngle = parseInt($(this).getRotateAngle());
+                $(this).rotate({
+                    angle: curAngle,
+                    animateTo: curAngle + 30
+                });
+            }
+        }
+   });
+
+
+  </script>
+</body>
+</html>

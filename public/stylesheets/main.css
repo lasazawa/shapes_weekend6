@@ -1,0 +1,128 @@
+/*'#69D2E7''#1B676B''#BEF202''#EBE54D''#00CDAC'
+'#1693A5''#F9D423''#FF4E50''#E7204E''#0CCABA''#FF006F'*/
+
+/*div {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}*/
+
+/*.rotate { transform:rotate(30deg);
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+  -o-transform:rotate(30deg); }*/
+
+div:hover {
+  opacity: 100%;
+}
+#square:hover, #hexagon:hover, #diamon:hover, #triangle:hover,
+#trapezoid:hover, #parallelogram:hover {
+  cursor: pointer;
+}
+
+/*#square, #hexagon, #diamond, #triangle,
+#trapezoid, #parallelogram {
+  position: absolute;
+}*/
+
+#square {
+  background-color: rgba(255, 0, 111, 0.9);
+  height: 96px;
+  width: 96px;
+  display: inline-block;
+}
+
+
+#hexagon {
+  width: 164px;
+  height: 96px;
+  background: rgba(12, 202, 186, 0.9);
+  position: relative;
+  display: inline-block;
+  opacity: 90%;
+}
+
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 82px solid transparent;
+  border-right: 82px solid transparent;
+  border-bottom: 48px solid rgba(12, 202, 186, 0.9);
+  opacity: 90%;
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -48px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 82px solid transparent;
+  border-right: 82px solid transparent;
+  border-top: 48px solid rgba(12, 202, 186, 0.9);
+  opacity: 90%;
+}
+
+#diamond {
+  width: 0;
+  height: 0;
+  border: 48px solid transparent;
+  border-bottom: 83px solid rgba(231, 32, 78, 0.9);
+  position: relative;
+  top: -48px;
+  opacity: 90%;
+}
+#diamond:after {
+  content: '';
+  position: absolute;
+  left: -48px; top: 83px;
+  width: 0;
+  height: 0;
+  border: 48px solid transparent;
+  border-top: 83px solid rgba(231, 32, 78, 0.9);
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-top: 83px solid rgba(249, 212, 35, 0.9);
+}
+
+#trapezoid {
+  border-bottom: 83px solid rgba(255, 78, 80, 0.9);
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  height: 0;
+  width: 96px;
+}
+
+#parallelogram {
+  width: 93px;
+  height: 48px;
+  -webkit-transform: skew(60deg);
+     -moz-transform: skew(60deg);
+       -o-transform: skew(60deg);
+  background-color: rgba(27, 103, 107, 0.95);
+}
+
+#butterfly {
+  background-color: #363636;
+  width:800px;
+  margin:0 auto;
+}
+#butterfly img {
+  margin:20px auto;
+  display:block;
+  padding:40px;
+}
+
+body{
+  background-color: #333;
+  margin:0;
+}
